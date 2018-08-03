@@ -5,19 +5,26 @@
  */
 package Modelo;
 
+import java.util.Scanner;
+
 /**
  *
  * @author JHOHAN
  */
 public class Estudiante {
+        Scanner tc = new Scanner(System.in);
     private String nombre;
     private int cedula;
     private int edad;
 
-    public Estudiante(String nombre, int cedula, int edad){
-        this.cedula=cedula;
-        this.edad=edad;
-        this.nombre=nombre;
+    public Estudiante(){
+        System.out.println("cedula");
+        this.cedula=tc.nextInt();
+        System.out.println("edad");
+        this.edad=tc.nextInt();
+        System.out.println("nombre");
+        this.nombre=tc.nextLine();
+        this.nombre=tc.nextLine();
     }
     
     public String getNombre() {
